@@ -1,3 +1,8 @@
 #!/bin/bash
+
+if [ -f "/var/www/html/index.html" ]; then
+ mv /var/www/html/index.html /tmp;
+fi
+
 yum install -y httpd
 
